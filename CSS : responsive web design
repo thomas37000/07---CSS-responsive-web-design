@@ -38,7 +38,7 @@
     box-sizing:border-box;
 }
 html {
-    width: 971px;
+    width: 1024px;
     margin: 0 auto;
 }
 body {
