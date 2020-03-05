@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Find the precious!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>FindThePrecious.com</li>
+                <li>Fellows</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="carousel"></div>
+        </section>
+        <section>
+            <h2 id="fellows">Fellows wanted dead <span>(or alive if you want to eat them later)</span></h2>
+        </section>
+        <section id="flex">
+            <article></article>
+            <article></article>
+            <article></article>         
+        </section>
+        <form>
+            <h2 id="contact">Contact us</h2>
+            <input type="email" placeholder="@">
+            <input type="text" placeholder="&#8962;">
+            <input type="text" placeholder="I have seen one of them">
+            <textarea placeholder="Your message"></textarea>
+        </form>
+    </body>
+</html>
+
+*{
+    box-sizing:border-box;
+}
+html {
+    width: 971px;
+    margin: 0 auto;
+}
+body {
+    margin: 0 auto;
+    font-family: "Gill Sans", sans-serif;
+    color: #707070;
+}
+nav {
+    background-color: grey;
+    padding: 1px;
+    color: #ffff;
+}
+
+li {    
+    display: inline;
+    list-style: none;
+    padding: 5px;
+}
+
+.li-selected {
+    background: #eeeeee;
+    color: #707070;
+    border: 1px;
+    border-color: #444444;
+}
+#flex {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+article {
+    display: inline-block;
+    width: 28%;
+    height: 300px;
+    background-color: #eeeeee;
+    margin: 10px;
+}
+#fellows {
+    text-align: center;
+    margin-top: 30px;
+}
+span {
+    font-size: 20px;
+}
+
+form {
+    border-top:1px solid gray;
+}
+
+#contact {
+    float: left;
+    margin-top: 10px;
+}
+
+input{
+    width:80%;
+    margin: 5px 10%;
+}
+
+textarea{
+    width:80%;
+    height: 100px;
+    margin: 5px 10%;
+}
+
+.carousel {
+    width: 100%;
+    height: 200px;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 10px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    #fellows{
+        font-size: 2rem; 
+    }
+
+    .carousel, article {
+        display: none;
+    }
+
+    #contact {
+        float: none;
+        text-align: center;
+    }
+
+}
